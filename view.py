@@ -28,7 +28,7 @@ def get_datasets():
 def get_models():
     models = []
     if "models" in next(os.walk('./shared-area/'))[1]:  
-        models = next(os.walk('./shared-area/models'))[1]
+        models = next(os.walk('./shared-area/models'))[2]
     return models
 
 @app.route('/api/getImage/<image>', methods=['GET'])
