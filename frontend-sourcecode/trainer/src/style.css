@@ -1,0 +1,99 @@
+.selectBox__wrapper {
+  background-color: red;
+  position: relative;
+  color: blue;
+  border: solid 0.2rem blue;
+  font-size: 2rem;
+}
+.selectBox__wrapper__desktop {
+  width: 25rem;
+}
+.selectBox__container {
+  width: 100%;
+  min-width: 10rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.selectBox__text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: 1rem;
+}
+.selectBox__arrow {
+  transform: rotate(-90deg);
+  font-size: 2.5rem;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 1rem;
+  transition: all 0.5s ease;
+}
+.selectBox__arrow__rotate {
+  transform: rotate(-270deg);
+}
+.selectBox__selections {
+  z-index: 5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  visibility: hidden;
+  background-color: transparent;
+  margin-right: 1rem;
+  transition: all 0.5s ease;
+}
+.selectBox__selections :nth-child(1) {
+  margin-top: 0.2rem;
+}
+.selectBox__selections__desktop {
+  width: 25rem;
+  transform: translateY(1rem) translateX(-0.2rem);
+}
+.selectBox__selections__mobile {
+  width: 15rem;
+  transform: translateY(1rem) translateX(-5.1rem);
+}
+.selectBox__selections__visible {
+  transition: all 0.5s ease;
+  visibility: visible;
+  background-color: blue;
+}
+.selectBox__option {
+  background-color: transparent;
+  color: transparent;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.selectBox__option__visible {
+  transition: all 0.5s ease;
+  visibility: visible;
+  background-color: red;
+  color: orange;
+}
+.selectBox__option__visible:hover {
+  color: blue;
+}
+.selectBox__option__desktop {
+  height: 2.3rem;
+  width: 98.5%;
+  transform: translateX(0.2rem);
+}
+.selectBox__option__mobile {
+  width: 97%;
+  height: 3rem;
+  transform: translateX(0.19rem);
+}/*# sourceMappingURL=style.css.map */
